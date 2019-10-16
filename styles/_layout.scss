@@ -13,6 +13,10 @@
 .footer {
   text-align: center;
   font-size: 1.4rem;
+  .footer-popular {
+    cursor: pointer;
+    margin-left: 2rem;
+  }
 }
 
 .main {
