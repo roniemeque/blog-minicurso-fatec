@@ -1,5 +1,5 @@
-import { getCollection } from "../../lib/db";
-//import { sluggify } from "../../helpers/strings";
+const { getCollection } = require("../../lib/db");
+const { sluggify } = require("../../helpers/strings");
 
 module.exports = async (req, res) => {
   return res.status(200).json({

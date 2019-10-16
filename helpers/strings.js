@@ -1,6 +1,6 @@
 // cria um string pronta para path
 // source: https://gist.github.com/codeguy/6684588
-export function sluggify(str) {
+const sluggify = str => {
   str = str.replace(/^\s+|\s+$/g, ""); // trim
   str = str.toLowerCase();
 
@@ -17,4 +17,8 @@ export function sluggify(str) {
     .replace(/-+/g, "-"); // collapse dashes
 
   return str;
-}
+};
+
+module.exports = {
+  sluggify
+};
