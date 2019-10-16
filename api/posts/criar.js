@@ -11,7 +11,7 @@ module.exports = async (req, res) => {
     const tags = body.tags.split(",").map(tag => tag.trim().toLowerCase());
 
     // criando slug do path
-    const path = sluggify(body.titulo);
+    const path = `${sluggify(body.titulo)}-${Math.floor(Math.random() * 999)}`;
 
     const { insertedId } = await collection.insertOne({
       ...body,
@@ -21,7 +21,8 @@ module.exports = async (req, res) => {
     });
 
     return res.status(200).json({
-      insertedId
+      insertedId,
+      path
     });
   } catch (error) {
     return res.status(500).json({ error });
