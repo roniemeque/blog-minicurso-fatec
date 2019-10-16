@@ -6,9 +6,11 @@ const Posts = ({ posts }) => {
     <div className="container">
       <h1>Posts</h1>
       <div className="lista-posts">
-        {posts.map(post => (
-          <Post key={post.path} post={post}></Post>
-        ))}
+        {!!posts.length ? (
+          posts.map(post => <Post key={post.path} post={post}></Post>)
+        ) : (
+          <span>Sem posts!</span>
+        )}
       </div>
     </div>
   );
