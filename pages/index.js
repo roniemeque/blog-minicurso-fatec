@@ -15,9 +15,9 @@ const Posts = ({ posts }) => {
 };
 
 Posts.getInitialProps = async () => {
-  const { posts } = await (await fetch(
-    `http://localhost:3000/api/posts`
-  )).json();
+  console.log(process.env.API_URL);
+
+  const { posts } = await (await fetch(`${process.env.API_URL}/posts`)).json();
 
   return { posts };
 };

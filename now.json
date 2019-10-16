@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "name": "blog-minicurso",
+  "env": {
+    "MONGODB_URI": "@minicurso_mongodb_uri",
+    "MONGODB_DBNAME": "@minicurso_mongodb_dbname",
+    "API_URL": "@minicurso_api_url"
+  }
+}

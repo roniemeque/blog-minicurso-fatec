@@ -1,17 +1,13 @@
-import Link from "next/link";
+//import Link from "next/link";
 
 const Nav = () => (
   <nav className="nav">
-    <Link href="/">
-      <a className="link" title="Posts">
-        Posts
-      </a>
-    </Link>
-    <Link href="/novo">
-      <a className="link" title="Novo post">
-        Novo post
-      </a>
-    </Link>
+    <a href="/" className="link" title="Posts">
+      Posts
+    </a>
+    <a href="/novo" className="link" title="Novo post">
+      Novo post
+    </a>
   </nav>
 );
 
