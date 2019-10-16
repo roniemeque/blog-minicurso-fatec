@@ -45,6 +45,7 @@ const Novo = () => {
 
   return (
     <div className="container">
+      <h1>Novo post</h1>
       <form onSubmit={criarPost} className="form">
         <input
           placeholder="Titulo"
