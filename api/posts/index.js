@@ -1,4 +1,4 @@
-import { getCollection } from "../../lib/db";
+const { getCollection } = require("../../lib/db");
 
 module.exports = async (req, res) => {
   try {
