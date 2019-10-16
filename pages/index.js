@@ -1,5 +1,6 @@
 import fetch from "isomorphic-unfetch";
 import Post from "../components/Post";
+import { apiUrl } from "../helpers/api";
 
 const Posts = ({ posts }) => {
   return (
@@ -17,9 +18,7 @@ const Posts = ({ posts }) => {
 };
 
 Posts.getInitialProps = async () => {
-  console.log(process.env.API_URL);
-
-  const { posts } = await (await fetch(`${process.env.API_URL}/posts`)).json();
+  const { posts } = await (await fetch(`${apiUrl}/posts`)).json();
 
   return { posts };
 };

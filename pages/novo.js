@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
+import { apiUrl } from "../helpers/api";
 
 const Novo = () => {
   const [post, setPost] = useState({
@@ -30,7 +31,7 @@ const Novo = () => {
 
     setCriandoPost(true);
 
-    const res = await fetch(`/api/posts/criar`, {
+    const res = await fetch(`${apiUrl}/posts`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
