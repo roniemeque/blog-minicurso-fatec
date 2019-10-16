@@ -7,7 +7,7 @@ const Novo = () => {
     titulo: "",
     tags: "",
     corpo: "",
-    thumb: "/static/img/doguinho.jpg"
+    thumb: "https://blog-minicurso.roniemeque.now.sh/static/img/doguinho.jpg"
   });
 
   const [criandoPost, setCriandoPost] = useState(false);
