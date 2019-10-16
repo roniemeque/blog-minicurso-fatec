@@ -36,6 +36,10 @@
     pointer-events: none;
   }
   text-align: center;
+  &--apagar {
+    background: red;
+    margin: 2rem auto;
+  }
 }
 
 @keyframes rotate {

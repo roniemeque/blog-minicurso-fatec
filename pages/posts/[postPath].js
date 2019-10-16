@@ -2,6 +2,14 @@ import fetch from "isomorphic-unfetch";
 import { apiUrl } from "../../helpers/api";
 
 const Post = ({ post }) => {
+  const apagarPost = async e => {
+    e.preventDefault();
+
+    await (await fetch(`${apiUrl}/posts/${post.path}/apagar`)).json();
+
+    window.location.href = "/";
+  };
+
   return (
     <div className="container">
       <div className="post-pagina">
@@ -15,6 +23,9 @@ const Post = ({ post }) => {
           ))}
         </div>
         <p className="post-corpo">{post.corpo}</p>
+        <button onClick={apagarPost} className="button button--apagar">
+          Apagar
+        </button>
       </div>
     </div>
   );
