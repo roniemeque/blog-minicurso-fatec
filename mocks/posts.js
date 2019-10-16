@@ -1,25 +1,22 @@
 export const posts = [
   {
-    titulo: "Post Legal",
-    tags: ["Legal", "Maneiro", "Topperson"],
-    path: "post-legal",
-    thumb: "/static/img/doguinho.jpg",
+    titulo: "Doguinhos",
+    tags: "Tag1, Tag2, Dogs",
+    thumb: "https://blog-minicurso.roniemeque.now.sh/static/img/doguinho.jpg",
     corpo:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, alias."
   },
   {
     titulo: "Post Legal",
-    tags: ["Legal", "Maneiro", "Topperson"],
-    path: "post-legal-2",
-    thumb: "/static/img/doguinho.jpg",
+    tags: "Gatinhos, Tag2",
+    thumb: "https://blog-minicurso.roniemeque.now.sh/static/img/gatinho.jpg",
     corpo:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, alias."
   },
   {
-    titulo: "Post Legal",
-    tags: ["Legal", "Maneiro", "Topperson"],
-    path: "post-legal-3",
-    thumb: "/static/img/doguinho.jpg",
+    titulo: "Post da Bike",
+    tags: "Bikes, Saúde",
+    thumb: "https://blog-minicurso.roniemeque.now.sh/static/img/bike.jpg",
     corpo:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, alias."
   }
