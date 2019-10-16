@@ -1,0 +1,9 @@
+.lista-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  justify-items: flex-start;
+  gap: 1rem 1rem;
+}
+
+.post-card {
+}
